@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ayt Sayısal Not Hesaplama</title>
+</head>
+
+<body>
+    <!-- Başlık -->
+    <header class="baslik"><br><br><br> <br><br><br> <br><br><br> <br><br><br>
+        <h1>Tyt Not Hesaplama</h1>
+
+        <!-- Başlık -->
+        <!-- Butonlar -->
+        <form action="tyt.php" method="post" name="form">
+            <div class="butonlar">
+                <div>
+                    <input type="number" name="obs" placeholder="Lise Ortalamanız: " class="itput" max="100">
+                </div>
+                <h1>TYT Netlerinizi Giriniz</h1>
+                <div>
+                    40 Soru: <input type="number" name="matematikd" placeholder="Matematik Doğru Giriniz" class="itput"
+                        max="40" required>
+                    <input type="number" name="matematiky" placeholder="Matematik Yanlış Giriniz" class="itput" max="40"
+                        required>
+
+                </div>
+
+                <div>
+                    20 Soru: <input type="number" name="fenid" placeholder="fen Doğru Giriniz" class="itput" max="20"
+                        required>
+                    <input type="number" name="feniy" placeholder="fen Yanlış Giriniz" class="itput" max="20" required>
+                </div>
+
+                <div>
+                    20 Soru: <input type="number" name="sosyalid" placeholder="sosyal Doğru Giriniz" class="itput"
+                        max="20" required>
+                    <input type="number" name="sosyaliy" placeholder="sosyal Yanlış Giriniz" class="itput" max="20"
+                        required>
+                </div>
+
+                <div>
+                    40 Soru :<input type="number" name="turkced" placeholder="turkce Doğru Giriniz" class="itput"
+                        max="40" required>
+                    <input type="number" name="turkcey" placeholder="turkce Yanlış Giriniz" class="itput" max="40"
+                        required>
+                </div>
+                <input type="submit" value="gönder" class="itpute">
+                <input type="reset" value="Sıfırla" class="itpute">
+        </form>
+
+        </div>
+        <a href="index.html">
+            <input type="submit" value="Geri Dön" class="itpute">
+
+        </a>
+    </header>
+    <!-- Butonlar -->
+</body>
+
+</html>
