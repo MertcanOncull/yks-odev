@@ -47,8 +47,8 @@
    $tytfennNetPuan = $fenn * 1.36;
    $tytmatematikNetPuan = $matematikn * 1.32;
    $obs = (int) $_POST['obs'];
-   $obsn = (int) $obs * 0.6;
-   $tytHamNetPuan = $tytmatematikNetPuan + $tytfennNetPuan + $tytsosyalNetPuan + $tytturkceNetPuan + $obsn + 40;
+   $obsn = (int) $obs * 0.8;
+   $tytHamNetPuan = $tytmatematikNetPuan + $tytfennNetPuan + $tytsosyalNetPuan + $tytturkceNetPuan + $obsn + 100;
    //-----------------------------------------------
 
    
@@ -75,8 +75,8 @@
  <!-- Başlık -->
  <header class="baslik"> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
         <h1>Ayt Sayısal Not Hesaplama</h1>
-       Ham Puan: <input type="number" placeholder="<?php echo "Ham Puan: " . $aytSayisalYerlestirmeYuzdeAltmis?>" class="itput" disabled>
-       Yerleştirme Puanı:<input type="number" placeholder="<?php echo "Yerleştirme Puan: " . $aytTytSayisalYuzdelik?>" class="itput" disabled>
+       Ham Puan: <input type="number" placeholder="<?php echo "Ham Puanı: " . $aytSayisalYerlestirmeYuzdeAltmis?>" class="itput" disabled>
+       Yerleştirme Puanı:<input type="number" placeholder="<?php echo "Yerleştirme Puanı: " . $aytTytSayisalYuzdelik?>" class="itput" disabled>
        <hr style="background-color:red;">
     <!-- Başlık -->
 
@@ -84,32 +84,32 @@
         <form>
             <div class="butonlar">     
             <div> 
-               <input type="number" placeholder="<?php echo "Mat Doğrunuz: " . $matematikd?>" class="itput" disabled>
-               <input type="number" placeholder="<?php echo "Mat Yanlışınız: ". $matematiky?>" class="itput" disabled>
-               <input type="number" placeholder="<?php echo "Mat Netiniz: " . $matematikn?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Mat doğrunuz: " . $matematikd?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Mat yanlışınız: ". $matematiky?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Mat netiniz: " . $matematikn?>" class="itput" disabled>
             </div>
 
             <div> 
-               <input type="number" placeholder="<?php echo "Kimya Doğrunuz: " . $kimyan?>" class="itput" disabled>
-               <input type="number" placeholder="<?php echo "Kimya Yanlışınız: " . $kimyan?>" class="itput" disabled>
-               <input type="number" placeholder="<?php echo "Kimya Netiniz: " . $kimyan?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Kimya doğrunuz: " . $kimyan?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Kimya yanlışınız: " . $kimyan?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Kimya netiniz: " . $kimyan?>" class="itput" disabled>
              </div>
 
             <div> 
-               <input type="number" name="fizikd" placeholder="<?php echo "Fizik Doğrunuz: " . $fizikn?>" class="itput" disabled>
-               <input type="number" name="fiziky" placeholder="<?php echo "Fizik Yanlışınız: " . $fizikn?>" class="itput" disabled>
-               <input type="number" name="fizikn" placeholder="<?php echo "Fizik Netiniz: " . $fizikn?>" class="itput" disabled>
+               <input type="number" name="fizikd" placeholder="<?php echo "Fizik doğrunuz: " . $fizikn?>" class="itput" disabled>
+               <input type="number" name="fiziky" placeholder="<?php echo "Fizik yanlışınız: " . $fizikn?>" class="itput" disabled>
+               <input type="number" name="fizikn" placeholder="<?php echo "Fizik netiniz: " . $fizikn?>" class="itput" disabled>
             </div>
 
              <div> 
-                <input type="number" placeholder="<?php echo "Biyo Doğrunuz: " . $biyolojid?>" class="itput" disabled>
-                <input type="number" placeholder="<?php echo "Biyo Yanlışınız: " . $matematiky?>" class="itput" disabled>
-                <input type="number" placeholder="<?php echo "Biyo Netiniz: " . $matematikn?>" class="itput" disabled>
+                <input type="number" placeholder="<?php echo "Biyo doğrunuz: " . $biyolojid?>" class="itput" disabled>
+                <input type="number" placeholder="<?php echo "Biyo yanlışınız: " . $matematiky?>" class="itput" disabled>
+                <input type="number" placeholder="<?php echo "Biyo netiniz: " . $matematikn?>" class="itput" disabled>
              </div>
              <div class="butonlar">
 
             <a href="aytsayisal.html">
-                  <input type="button" class="itpute" value="Geri Dön">
+                  <input type="button" class="itpute" value="Geri dön">
             </a>
        </div>
    </div>
@@ -118,7 +118,7 @@
     <!-- Butonlar -->
 
     <?php } else {  ?>
-      <?php    echo "ayt notun" . $aytTytSayisalYuzdelik . " olduğu için ayt sınavına giremezsin ";?>
+      <?php    echo "Ayt notun" . $aytTytSayisalYuzdelik . " olduğu için ayt sınavına giremezsin ";?>
    <div class="butonlar">
      <a href="aytsayisal.html">
       <input type="button" class="itpute" value="Geri Dön">
@@ -127,7 +127,7 @@
  
       <?php } ?>
   <?php } else { ?>
-   <?php    echo "tyt notun " . $tytHamNetPuan . " olduğu için ayt sınavına giremezsin ";?>
+   <?php    echo "Tyt notun " . $tytHamNetPuan . " olduğu için ayt sınavına giremezsin ";?>
    <div class="butonlar">
      <a href="aytsayisal.html">
       <input type="button" class="itpute" value="Geri Dön">
@@ -135,7 +135,6 @@
    </div>
  
      <?php } ?>
-
      <?php } else { ?>
   <?php echo "Lise ortalamanız 49 veya aşağısında olduğu için sınava giremezsiniz"; ?>
 

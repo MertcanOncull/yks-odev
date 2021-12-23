@@ -34,16 +34,16 @@
     $tytmatematikNetPuan = $matematikn * 1.2;
     
     $tytHamNetPuan = $tytmatematikNetPuan + $tytfennNetPuan + $tytsosyalNetPuan + $tytturkceNetPuan;
-    $tytYerNetPuan = $tytmatematikNetPuan + $tytfennNetPuan + $tytsosyalNetPuan + $tytturkceNetPuan + $obsn +50;
+    $tytYerNetPuan = $tytmatematikNetPuan + $tytfennNetPuan + $tytsosyalNetPuan + $tytturkceNetPuan + $obsn +60;
     
     ?>
      <!-- Başlık -->
      <?php if ($obs >= 50) {?>
       <?php if ($tytYerNetPuan >= 150) { ?>
          <header class="baslik"><br><br><br> <br><br><br> <br><br><br> <br><br><br>
-        <h1>tyt Sayısal Not Hesaplama</h1>
-       Ham Puan: <input type="number" name="matematikd" placeholder="<?php echo "Ham Puan: " . $tytHamNetPuan ?>" class="itput" disabled>
-       Yerleştirme Puanı:<input type="number" name="matematiky" placeholder="<?php echo "Yerleştirme Puan: " . $tytYerNetPuan ?>" class="itput" disabled>
+        <h1>Tyt Sayısal Not Hesaplama</h1>
+       Ham puan: <input type="number" name="matematikd" placeholder="<?php echo "Ham Puan: " . $tytHamNetPuan ?>" class="itput" disabled>
+       Yerleştirme puanı:<input type="number" name="matematiky" placeholder="<?php echo "Yerleştirme Puan: " . $tytYerNetPuan ?>" class="itput" disabled>
        <hr style="background-color:red;">
     <!-- Başlık -->
 
@@ -51,30 +51,31 @@
         <form>
           <div class="butonlar"> 
             <div> 
-               <input type="number" placeholder="<?php echo "Mat Doğrunuz: " . $matematikd ?>" class="itput" disabled>
-               <input type="number" placeholder="<?php echo "Mat Yanlışınız: ". $matematiky ?>" class="itput" disabled>
-               <input type="number" placeholder="<?php echo "Mat Netiniz: " . $matematikn ?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Mat doğrunuz: " . $matematikd ?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Mat yalnışınız: ". $matematiky ?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Mat netiniz: " . $matematikn ?>" class="itput" disabled>
             </div>
 
             <div> 
-                <input type="number"  placeholder="<?php echo "Fen Doğrunuz: " . $fenid ?>" class="itput" disabled>
-                <input type="number"  placeholder="<?php echo "Fen Yanlışınız: " . $feniy ?>" class="itput" disabled>
-                <input type="number"  placeholder="<?php echo "Fen Netiniz: " . $fenin ?>" class="itput" disabled>
+                <input type="number"  placeholder="<?php echo "Fen doğrunuz: " . $fenid ?>" class="itput" disabled>
+                <input type="number"  placeholder="<?php echo "Fen yalnışınız: " . $feniy ?>" class="itput" disabled>
+                <input type="number"  placeholder="<?php echo "Fen netiniz: " . $fenin ?>" class="itput" disabled>
              </div>
 
              <div> 
-               <input type="number"  placeholder="<?php echo "Sosyal Doğrunuz: " . $sosyalid ?>" class="itput" disabled>
-               <input type="number"  placeholder="<?php echo "Sosyal Yanlışınız: " . $sosyaliy ?>" class="itput" disabled>
-               <input type="number"  placeholder="<?php echo "Sosyal Netiniz: " . $sosyalin ?>" class="itput" disabled>
+               <input type="number"  placeholder="<?php echo "Sosyal doğrunuz: " . $sosyalid ?>" class="itput" disabled>
+               <input type="number"  placeholder="<?php echo "Sosyal yalnışınız: " . $sosyaliy ?>" class="itput" disabled>
+               <input type="number"  placeholder="<?php echo "Sosyal netiniz: " . $sosyalin ?>" class="itput" disabled>
              </div>
 
             <div> 
-               <input type="number"  placeholder="<?php echo "Türkçe Doğrunuz: " . $turkced ?>" class="itput" disabled>
-               <input type="number" placeholder="<?php echo "Türkçe Yanlışınız: " . $turkcey ?>" class="itput" disabled>
-               <input type="number" placeholder="<?php echo "Türkçe Netiniz: " . $turkcen ?>"  class="itput" disabled>
+               <input type="number"  placeholder="<?php echo "Türkçe doğrunuz: " . $turkced ?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Türkçe yalnışınız: " . $turkcey ?>" class="itput" disabled>
+               <input type="number" placeholder="<?php echo "Türkçe netiniz: " . $turkcen ?>"  class="itput" disabled>
             </div>
       </div>
-            <div class="butonlar">
+
+      <div class="butonlar">
      <a href="tyt.html">
       <input type="button" class="itpute" value="Geri Dön">
      </a>
